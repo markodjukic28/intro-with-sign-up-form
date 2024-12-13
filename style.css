@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side {
+  color: #fff;
+  width: 400px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+h1 {
+  line-height: 55px;
+  margin-bottom: 20px;
+  font-size: 44px;
+}
+
+.p-left {
+  font-size: 12px;
+}
+
+.btn-trial {
+  background: hsl(248, 32%, 49%);
+  color: #fff;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+  width: 400px;
+  padding: 15px 0;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.top-span {
+  font-weight: 600;
+}
+
+form {
+  background: #fff;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 15px;
+}
+
+.wrap {
+  position: relative;
+}
+
+.img-error {
+  position: absolute;
+  top: 42%;
+  right: 12%;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+form input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 340px;
+  margin: 25px 0 0 25px;
+  padding: 10px 30px;
+  outline: 0;
+}
+
+.btn-submit {
+  background: hsl(154, 59%, 51%);
+  color: #fff;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+  font-weight: 500;
+  width: 340px;
+  margin: 15px 30px 0 30px;
+  padding: 10px 0;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(8, 26, 11, 0.3);
+}
+
+.btn-submit:active {
+  opacity: 0.5;
+}
+
+.p-right {
+  color: hsl(246, 25%, 77%);
+  font-size: 9px;
+  padding: 20px 40px 30px 40px;
+  margin-left: 5px;
+}
+
+.bottom-span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.firstName-error,
+.lastName-error,
+.email-error,
+.password-error {
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-side {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .p-left {
+    font-size: 12px;
+  }
+
+  .btn-trial {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form input {
+    width: calc(100% - 50px);
+    margin: 15px 25px;
+  }
+
+  .btn-submit {
+    width: calc(100% - 60px);
+    margin: 15px 30px 0 30px;
+  }
+
+  .p-right {
+    font-size: 10px;
+    padding: 10px 20px 20px 20px;
+  }
+}
